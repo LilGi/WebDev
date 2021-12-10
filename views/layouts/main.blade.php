@@ -4,27 +4,39 @@
     <meta charset="utf-8">
 
     <title>Home</title>
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script  src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        } );
+    </script>
 
 </head>
 <body>
 @include('layouts.users-dashboard')
 @yield('content')
+
+
 <form method="post" id="logout" action="{{route('logout')}}">
     @csrf
 
 
-
 </form>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 
 @yield('qr-script')
@@ -33,6 +45,8 @@
         document.getElementById("logout").submit();
     }
 </script>
+
+
 
 </body>
 </html>
