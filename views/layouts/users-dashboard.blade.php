@@ -25,7 +25,7 @@
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-lock pr-2"></i>Change password</a></li>
+                    <li><a class="dropdown-item" href="{{route('change-password')}}"><i class="fas fa-lock pr-2"></i>Change password</a></li>
                     <li><a class="dropdown-item" href="{{route('account-settings')}}"><i class="fas fa-user-cog pr-2"></i>Account Settings</a></li>
                     <li>
                         <hr class="dropdown-divider">
