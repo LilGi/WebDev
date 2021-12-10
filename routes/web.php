@@ -38,6 +38,11 @@ Route::get('own-logs', function () {
     return view('layouts.own-logs');
 })->middleware(['auth'])->name('own-logs');
 
+Route::get('change-password', function () {
+    return view('layouts.change-password');
+})->middleware(['auth'])->name('change-password');
+
+
 Route::get('main', function () {
     return view('layouts.main');
 })->middleware(['auth'])->name('main');
