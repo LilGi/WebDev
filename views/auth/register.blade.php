@@ -220,7 +220,7 @@
         <div class="d-flex justify-content-center pt-3">
 
             <div class="pt-2">
-                <button class="btn btn-primary"onclick="window.location.href='{{ route('welcome') }}'">Cancel</button>
+                <button class="btn btn-primary">Cancel</button>
             </div>
         </div>
     </div>

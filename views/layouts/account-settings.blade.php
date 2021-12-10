@@ -5,7 +5,7 @@
         <h4 class="pb-4 border-bottom">Account Settings</h4>
         <div class="d-flex align-items-start py-3 border-bottom"> <img src="https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img" alt="">
             <div class="pl-sm- pl-2" id="img-section"> <b>Profile Photo</b>
-                <p>Accepted file type .png. Less than 1MB</p> <button class="btn border button"><b>Upload</b></button>
+                <p>Accepted file type .png. Less than 1MB</p> <button class="btn"><b>Upload</b></button>
             </div>
         </div>
         <div class="py-2">
@@ -27,13 +27,13 @@
             </div>
             <div class="row py-2">
                 <div class="col-md">
-                    <input type="text" class="bg-light form-control"placeholder="City/Municipality">
+                    <input type="text" class="bg-light form-control" placeholder="City/Municipality">
                 </div>
             </div>
             <div class="row py-2">
                 <div class="col-md">
                     <!-- <label for="address">Province</label> -->
-                    <input type="text" class="bg-light form-control"placeholder="Province">
+                    <input type="text" class="bg-light form-control" placeholder="Province">
                 </div>
             </div>
             <br>
@@ -70,13 +70,17 @@
                     <input type="text" name="student" id="idnumber" class="bg light form-control"  style='display:none;' placeholder="Please fill this field" >
                 </div>
             </div>
-            <div class="py-3 pb-4 border-bottom"> <button class="btn btn-primary mr-3">Save Changes</button> <button class="btn border button">Cancel</button> </div>
+            <div class="py-3 pb-4 border-bottom">
+                <button class="btn btn-primary mr-3">Save Changes</button>
+                <button class="btn"><b>Cancel</b></button>
+            </div>
             <div class="d-sm-flex align-items-center pt-3" id="deactivate">
                 <div> <b>Request for account deletion</b>
                     <p>Details about your account and password</p>
-
                 </div>
-                <div class="ml-auto"> <button class="btn danger ">Delete Account</button> </div>
+                <div class="ml-auto">
+                    <button class="btn danger ">Delete Account</button>
+                </div>
             </div>
         </div>
     </div>

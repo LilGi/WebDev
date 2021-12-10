@@ -14,9 +14,24 @@
         <div class="d-flex justify-content-center pt-3">
 
             <div class="pt-2">
-                <button class="btn btn-primary"onclick="">Download</button>
+                <button class="btn btn-primary">Download</button>
             </div>
         </div>
     </div>
 </div>
+@endsection
+
+@section('qr-script')
+    <script src="{{asset('js/qrcode.js')}}"></script>
+    <script src="{{asset('js/qrcode.min.js')}}"></script>
+    <script>
+        var QR_CODE = new QRCode("qrcode", {
+            width: 220,
+            height: 220,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+        QR_CODE.makeCode("ID NUMBER TO DETOY");
+    </script>
 @endsection
