@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,24 +24,31 @@ Route::get('/dashboard', function () {
 
 
 Route::get('qr', function () {
-    return view('layouts.qr');
+    return view('user.qr');
 })->middleware(['auth'])->name('qr');
 
 Route::get('account-settings', function () {
-    return view('layouts.account-settings');
+    return view('user.account-settings');
 })->middleware(['auth'])->name('account-settings');
 
 Route::get('home', function () {
-    return view('layouts.home');
+    return view('user.home');
 })->middleware(['auth'])->name('home');
 
 Route::get('own-logs', function () {
-    return view('layouts.own-logs');
+    return view('user.own-logs');
 })->middleware(['auth'])->name('own-logs');
 
+
+
 Route::get('change-password', function () {
-    return view('layouts.change-password');
+    return view('user.change-password');
 })->middleware(['auth'])->name('change-password');
+
+Route::get('delete/{user}', function () {
+    return view('admin.delete');
+})->middleware(['auth'])->name('admin.delete');
+
 
 
 Route::get('main', function () {
@@ -49,5 +57,12 @@ Route::get('main', function () {
 
 
 
+Route::resource('users', App\Http\Controllers\Auth\RegisteredUserController::class);
+
+
 
 require __DIR__.'/auth.php';
+
+
+
+//route::get('users-index', [App\Http\Controllers\Auth\RegisteredUserController::class, 'index'])->name('users.index');
