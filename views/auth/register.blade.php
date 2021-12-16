@@ -34,7 +34,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="{{asset('css/signupform.css')}}">
+
+
     <title>Sign up</title>
+    <style>
+        table, th, td {
+            border: 15px solid;
+            border-color: transparent;
+        }
+
+    </style>
 </head>
 <body>
 <!-- Validation Errors -->
@@ -129,11 +138,12 @@
                 <x-input id="name" class="bg-light form-control" type="text" name="name" :value="old('name')"  placeholder="First Name" required autofocus />
             </div>
             <div class="col-md-6 pt-md-0 pt-3">
-                <input type="text" class="bg-light form-control" placeholder="Last Name">
+                <x-input id="lname" class="bg-light form-control" type="text" name="lname" :value="old('lname')"  placeholder="Last Name" required autofocus />
             </div>
         </div>
         <br>
         <h4 style="font-size: revert">Current Address</h4>
+
         <div class="row py-2">
             <div class="col-md">
                 <input type="text" class="bg-light form-control" placeholder="Barangay">
@@ -154,13 +164,14 @@
         <h4 style="font-size: revert">Contact Information</h4>
         <div class="row py-2">
             <div class="col-md">
-                <x-input id="email" class="bg-light form-control" type="email" name="email" :value="old('email')" required placeholder="Email" />
+                <x-input id="email" class="bg-light form-control" type="email" name="email" :value="old('email')" placeholder="Email" />
             </div>
         </div>
         <div class="row py-2">
             <div class="col-md">
                 {{--<label for="phone">Phone number</label>--}}
-                <input type="tel" class="bg-light form-control" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number (e.g 0912-345-6789)">
+
+                <x-input type="tel" id="phonenumber" class="bg-light form-control" type="tel" name="phonenumber" placeholder="Phone Number (e.g 0912-345-6789)" autofocus/>
             </div>
         </div>
         <!-- Type New Password section -->
@@ -220,13 +231,14 @@
         <div class="d-flex justify-content-center pt-3">
 
             <div class="pt-2">
-                <button class="btn btn-primary">Cancel</button>
+                <a href="{{ url()->previous() }}" class="btn btn-primary">Back</a>
             </div>
         </div>
     </div>
 
 </div>
 </form>
+
 
 </body>
 </html>

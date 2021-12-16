@@ -5,7 +5,10 @@
 
     <title>Home</title>
 
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script  src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
 
@@ -18,15 +21,19 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
 
-    <script>
-        $(document).ready(function () {
-            $('#example').DataTable();
+<script>
+    $(document).ready( function () {
+        $('#example').DataTable( {
+            responsive: true
         } );
-    </script>
+    } );
+</script>
+
+
 
 </head>
 <body>
-@include('layouts.users-dashboard')
+@include('user.users-dashboard')
 @yield('content')
 
 
@@ -45,7 +52,6 @@
         document.getElementById("logout").submit();
     }
 </script>
-
 
 
 </body>
