@@ -56,11 +56,11 @@
             <div class="d-flex align-items-center flex-column py-2 pb-4 border-bottom">
                 <button type="submit" id="submit" class="btn btn-primary">Log in</button>
 
-                <a class="pt-2" href="{{ route('password.request') }}">Forgot password?</a>
+                <a class="pt-2" style="color: #800000" href="{{ route('password.request') }}">Forgot password?</a>
             </div>
             <div class="d-flex pt-3">
                 <div class="ml-auto mr-auto">
-                    <a role="button" href="{{ route('register') }}" class="cbtn">Create new account</a>
+                    <a role="button" href="{{ route('register') }}" class="btn btn-info">Create new account</a>
                 </div>
             </div>
         </div>

@@ -2,13 +2,13 @@
 
 @section('content')
 
-<div class="wrapper mt-sm-5">
+<div class="container pt-5">
     <h4 class="pb-4 border-bottom">QR code</h4>
     <div class="d-flex justify-content-center py-3">
         <div id="qrcode"></div>
     </div>
     <div class="py text-center">
-        <h4 style=" color: #fff; font-weight: 400;" >{{ Auth::user()->name }}</h4>
+        <h4 style="font-weight: 400;" >{{ Auth::user()->name }}</h4>
         <div class="py-2 d-flex justify-content-center border-bottom">
         </div>
         <div class="d-flex justify-content-center pt-3">

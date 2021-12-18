@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(12, 163, 223, 0.8)">
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color:#cf1020">
     <div class="container">
-    <a class="navbar-brand" href="{{route('home')}}"><b style="font-size: xx-large;">T<span style="color: #21eb6e;">PORTAL</span></b></a>
+    <a class="navbar-brand" href="{{route('home')}}"><b style="font-size: xx-large;">T<span style="color: cornsilk;">PORTAL</span></b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

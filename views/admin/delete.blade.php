@@ -7,7 +7,7 @@
         {{method_field('DELETE')}}
         <div class="wrapper mt-sm-5">
             <h4 class="pb-4 border-bottom">Are you sure you want to delete?  </h4>
-            <h1 style="color: #fff">{{$user->name}}</h1>
+            <h1>{{$user->name}}</h1>
             {{--<div>--}}
             {{--</div>--}}
             {{--<div class="py-2">--}}
@@ -77,7 +77,7 @@
                 <div class="py-3 pb-4 border-bottom">
 
                     <button type="submit" value="submit" class="btn btn-success ">Yes</button>
-                    <a href="{{ url()->previous() }}" class="btn btn-light">No</a>
+                    <a href="{{ url()->previous() }}" class="btn btn-info">No</a>
                 </div>
 
             </div>

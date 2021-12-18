@@ -76,7 +76,7 @@
             <div class="py-3 pb-4 border-bottom">
 
                 <button type="submit" value="submit" class="btn btn-success ">Save Changes</button>
-                <a href="{{ url()->previous() }}" class="btn btn-light">Cancel</a>
+                <a href="{{ url()->previous() }}" class="btn btn-info">Cancel</a>
             </div>
 
         </div>

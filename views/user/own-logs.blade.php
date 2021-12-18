@@ -1,18 +1,15 @@
 @extends('layouts.main')
 @section('content')
-
-    <div class="container mt-sm-5 p-5 mb-5  padding" style="background-color: rgba(12, 163, 223, 0.3); border-radius: 5px">
+    <div class="container pt-5">
         <h4 class="pb-4 border-bottom">UsersView Log</h4>
         <div class="d-flex justify-content-center py-3">
             <div>
-                <table id="example" class="display" style="width:100%">
+                <table id="example" class="table table-striped table-bordered nowrap" style="width:100%">
                     <thead>
                     <tr>
-
                         <th>Time in</th>
                         <th>Time out</th>
                         <th>Date</th>
-
                     </tr>
                     </thead>
                     <tbody>
@@ -41,7 +38,6 @@
                         <td>12/19/2021</td>
                     </tr>
                     <tr>
-
                         <td>2:00 am</td>
                         <td>2:00 pm</td>
                         <td>12/11/2021</td>

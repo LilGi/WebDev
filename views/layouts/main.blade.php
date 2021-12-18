@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
 
-    <title>Home</title>
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script  src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <style type="text/css" >
+        .container { max-width: 1200px }
+
+        .dataTables_length{
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
+        .dataTables_filter{
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
+
+    </style>
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script>
+    <script type="text/javascript" class="init">
 
-
-<script>
-    $(document).ready( function () {
-        $('#example').DataTable( {
-            responsive: true
+        $(document).ready(function() {
+            $('#example').DataTable( {
+                responsive: true,
+            } );
         } );
-    } );
-</script>
+
+    </script>
 
 
 
@@ -43,15 +59,23 @@
 
 </form>
 
-
+{{--<script src="https://code.jquery.com/jquery-3.5.1.js"></script>--}}
+{{--<script  src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>--}}
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 
 @yield('qr-script')
+
+{{--<script>--}}
+    {{--$(document).ready( function () {--}}
+        {{--$('#example').DataTable()--}}
+    {{--} );--}}
+{{--</script>--}}
 <script>
     function myFunction() {
         document.getElementById("logout").submit();
     }
 </script>
+
 
 
 </body>

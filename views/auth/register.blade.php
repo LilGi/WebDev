@@ -128,7 +128,7 @@
     <h4 class="pb-4 border-bottom">Sign Up</h4>
     <div>
         <div class="pl-sm- pl" id="img-section">
-            <p>Please fill in the information honestly.</p>
+            <p style="color:#800000;">Please fill in the information honestly.</p>
         </div>
     </div>
     <div class="py-2">
@@ -209,7 +209,7 @@
             <div class="col-md">
 
                 <div class="arrow">
-                    <select name="role" id="role" class="bg-light" onchange='Roles(this.value);'>
+                    <select name="role" id="role" class="bg-light form-control" onchange='Roles(this.value);'>
                         <option value="curent" selected >Select current role</option>
                         <option value="student">Student</option>
                         <option value="teacher">Teacher</option>
@@ -226,12 +226,12 @@
         </div>
         <div class="py-3 pb-4 d-flex justify-content-center border-bottom">
             <button type="reset" class="btn btn-danger mr-3">Clear form</button>
-            <button class="btn btn-light" type="submit"  id="submit">Next</button>
+            <button class="btn btn-success" type="submit"  id="submit">Next</button>
         </div>
         <div class="d-flex justify-content-center pt-3">
 
             <div class="pt-2">
-                <a href="{{ url()->previous() }}" class="btn btn-primary">Back</a>
+                <a href="{{ url()->previous() }}" class="btn btn-info">Back</a>
             </div>
         </div>
     </div>

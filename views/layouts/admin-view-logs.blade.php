@@ -53,44 +53,47 @@
         {{--</div>--}}
         <!-- /heading -->
         <!-- table -->
-        <div class="container mt-sm-5 p-5 mb-5  padding" style="background-color: rgba(12, 163, 223, 0.3); border-radius: 5px">
-            <h4 class="pb-4 border-bottom">Registered List</h4>
-            <div class="d-flex justify-content-center py-3">
-        <table class="display" id="example" >
-
+<div class="container pt-5">
+    <h4 class="pb-4 border-bottom">Registered List</h4>
+    <div class="row">
+        <div class="col-lg-12">
+        <table class="table table-striped table-bordered display nowrap" cellspacing="0" id="example" >
             <thead>
-                <tr>
-                    <th>First name</th>
-                    <th>Last name</th>
-                    <th>Address</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                    <th>Province</th>
-                    <th>City</th>
-                    <th>Barangay</th>
-                    <th>Option</th>
-                </tr>
+            <tr >
+                <th data-priority="1">First name</th>
+                <th>Last name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Province</th>
+                <th>City</th>
+                <th>Barangay</th>
+                <th>Option</th>
+            </tr>
             </thead>
             <tbody>
             @foreach($user as $userinfo)
                 <tr >
                     <td class="align-middle ">{{$userinfo->name}}</td>
                     <td class="align-middle ">{{$userinfo->lname}}</td>
-                    <td class="align-middle ">Secret</td>
                     <td class="align-middle ">{{$userinfo->phonenumber}}</td>
                     <td class="align-middle ">{{$userinfo->email}}</td>
                     <td class="align-middle ">{{$userinfo->province}}</td>
                     <td class="align-middle ">{{$userinfo->city}}</td>
                     <td class="align-middle ">{{$userinfo->barangay}}</td>
-                    <td class="align-middle "><a href="{{route('users.edit', $userinfo)}}" class="btn btn-success">Edit</a> </td>
-                    <td class="align-middle "><a href="{{route('users.show', $userinfo)}}" class="btn danger">Delete</a> </td>
+                    <td class="align-middle">
+                        <a href="{{route('users.edit', $userinfo)}}" class="btn btn-success">Edit</a>
+                        <a href="{{route('users.show', $userinfo)}}" class="btn danger">Delete</a>
+                    </td>
+
                     {{--<button type="button" class="btn btn-success" id="edit-item" data-item-id="1">edit</button>--}}
                 </tr>
             @endforeach
             </tbody>
         </table>
-            </div>
         </div>
+    </div>
+   </div>
+
         <!-- /table -->
     {{--</div>--}}
     {{--<!-- Attachment Modal -->--}}
